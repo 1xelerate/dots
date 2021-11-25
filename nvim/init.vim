@@ -12,6 +12,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'rhysd/vim-clang-format'
 
 call plug#end()
 
@@ -95,4 +96,4 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 let g:rustfmt_autosave = 1
-
+let g:clang_format#auto_format = 1
